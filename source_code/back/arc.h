@@ -17,6 +17,18 @@ public:
     int get_first_cell(void);
 
     int get_second_cell(void);
+    
+    char get_constraint_char(void);
+
+    int get_constraint_value(void);
+
+    bool remove_inconsistant_values(std::vector <int>* firstDomain, std::vector <int>* secondDomain);
+
+    bool is_equal(Arc &x);
+
+    void swap_cells(void);
+
+    void print_arc(void);
 };
 
 #endif // ARC_H
