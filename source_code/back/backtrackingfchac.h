@@ -11,6 +11,13 @@ private:
     std::vector <std::vector <int>> Domains;
     std::vector <std::vector <Arc>> arcsPerCell;
     std::vector <std::vector<bool>> arcsFlag;
+public:
+    BacktrackingFCHAC(grid* gridPtr);
+
+    bool AC_3();
+
+    void solve(grid* gridPtr);
+
 };
 
 #endif // BACKTRACKINGFCHAC_H
