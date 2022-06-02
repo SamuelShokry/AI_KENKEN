@@ -11,11 +11,15 @@ private:
                             Implemented as a number of the grid size to loop through it.*/
 
 public:
-  
+    Backtracking(grid* gridPtr);
+
+    grid* get_backtracking_variables();
+
+    int get_backtracking_domain();
 
     bool check_constraints(int cellIndex);
 
-    
+    bool solve(int index);
 };
 
 #endif // BACKTRACKING_H
