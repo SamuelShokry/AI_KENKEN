@@ -1,1 +1,35 @@
 # AI_KENKEN
+
+Program features:
+- Supports 4 different modes of the operations:
+  - PLUS
+  - PLUS_MINUS
+  - TIMES_DIVIDED
+  - ALL_OPERATIONS
+- Supports all sizes from 3 up to 9, inclusive.
+- Generate random games given the required size and operations mode
+- Can solve the generated game using 3 different algorithms:
+  - Backtracking
+  - Backtracking with Forward Checking
+  - Backtracking with Forward Checking and Arc Consistency
+- Can save a solved or unsolved game on the disk in a path of the user's choice
+- CTRL + S : shortcut for saving a game
+- Can load a saved game from the disk, display and solve it
+- CTRL + O : shortcut for loading a stored game
+- Clear the solution and/or the entire game
+- Has a compare mode:
+  - user can choose: 
+    - GAME_COUNT
+    - GAME_SIZE
+    - GAME_MODE 
+    - required algorithms to be compared
+  - the program will generate and solve the required games and display the total time taken to solve them using each algorithm
+  - Games are displayed while being solved
+  - Progress bar is used to display the overall progress
+  - Solving the games and comparing the algorithms can be:
+    - Paused
+    - Resumed
+    - Cancelled
+- The program has a status bar to reflect the current status
+- Buttons are enabled and disabled according to the currently allowed operations, to minimize user's errors
+- input is checked against user's errors
